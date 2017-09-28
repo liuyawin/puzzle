@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: #D4D4D4;
+        }
+        #container {
+            width: 545px;
+            height: 545px;
+            font-size: 0;
+            position: absolute;
+        }
+
+        .active {
+            background-color: rgba(0, 0, 0, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+    </div>
+    <script src="./js/puzzle.js"></script>
+    <script>
+        var game = new Puzzle('container', 1, './images/kenan.png');
+        game.initPuzzle();
+    </script>
+</body>
+
+</html>
